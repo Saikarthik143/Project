@@ -10,6 +10,7 @@ namespace MainPro
     {
 
         static List<Buyer> b = new List<Buyer>();
+        itembo bo = new itembo();
         public void CreateBuyer(string s,string em,string pd,string address,int mobile)
         {
            
@@ -34,6 +35,14 @@ namespace MainPro
             {
                 Console.WriteLine(b3.ToString());
             }
+        }
+        public void display()
+        {
+            bo.Display();
+        }
+        public void Search()
+        {
+            bo.Search();
         }
     }
 }

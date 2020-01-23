@@ -56,9 +56,19 @@ namespace MainPro
                                 if (flag == true)
                                 {
                                     Console.WriteLine("login Successful");
-                                    Console.WriteLine("1.Electronic 2.Homeappliances 3.Accessories ");
+                                    while (true)
+                                    {
+                                        Console.WriteLine("1.Electronic 2.Homeappliances 3.Accessories ");
+                                        Console.WriteLine("1:Display 2:Search \n  3:exit");
+                                        int c = Convert.ToInt32(Console.ReadLine());
+                                        if (c == 1)
+                                            b1.display();
+                                        else if (c == 2)
+                                            b1.Search();
+                                        else
+                                            break;
+                                    }
                                 }
-
                                 else
                                     Console.WriteLine("invalid credentials");
 
